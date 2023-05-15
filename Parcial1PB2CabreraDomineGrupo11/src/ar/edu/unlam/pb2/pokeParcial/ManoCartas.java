@@ -14,17 +14,20 @@ public class ManoCartas {
 	    private static final String[] NOMBRES_POKEMON_PLANTA = {"Bulbasaur", "Ivysaur", "Venusaur", "Oddish", "Gloom", "Vileplume", "Paras", "Parasect", "Bellsprout", "Weepinbell", "Victreebel", "Exeggcute", "Exeggutor", "Tangela", "Chikorita", "Bayleef", "Meganium", "Bellossom", "Hoppip", "Skiploom", "Jumpluff", "Sunkern", "Sunflora", "Celebi"};
 	    
 	  
-
+       
 	    private static List<Pokemon> pokemonListJugador = new ArrayList<Pokemon>();
    
-    
-    public ManoCartas(Integer longitud) {
+	    
+   
+
+	public ManoCartas(Integer longitud) {
 			super();
+			
 			pokemonListJugador = repartirCartas(longitud);
 		}
 
 
-	public static List<Pokemon> repartirCartas(int longitud) { //otorga una lista de 7 cartas pokemon random
+	public static List<Pokemon> repartirCartas(int longitud) { // hecho por Noelia otorga una lista de 7 cartas pokemon random
         Random random = new Random();
         
         for (int i = 0; i < longitud ; i++) {

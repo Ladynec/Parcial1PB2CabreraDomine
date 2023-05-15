@@ -48,7 +48,7 @@ public class PokemonAgua extends Pokemon{
 	@Override
 	public Integer recibirAtaque(Integer danioRecibido) {
 		Integer puntos = this.puntosDeVida - danioRecibido;
-		if(puntosDeVida<=0) {
+		if(puntosDeVida>=0) {
 			this.estado = "derrotado";
 		}
 		return puntos;

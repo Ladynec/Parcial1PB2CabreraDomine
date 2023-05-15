@@ -1,5 +1,7 @@
 package ar.edu.unlam.pb2.pokeParcial;
 
+import java.util.stream.Stream;
+
 public abstract class Pokemon {
 
 	private String nombre;
@@ -8,6 +10,7 @@ public abstract class Pokemon {
 	protected Integer ataqueGolpe = 30;
 	private Integer debilidadPorTipologia;
 	protected Integer fortaleza= 50;
+	private boolean participado = false;
 	
 	public Pokemon(String nombre) {
 		this.nombre = nombre;
